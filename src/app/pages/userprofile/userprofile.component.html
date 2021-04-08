@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div class="body">
+
+    <div class="container style-04 ">
+      <div class="row profile">
+        <div class="card card1 ">
+          <form>
+            <div class="name ">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <h6> <b>Name</b></h6>
+              <input type="text" class="form-control col-md-10 offset-md-2 input" id="input" value="{{user}}" #name>
+              <div class="row details">
+                <b class="in" id="in">{{user}}</b>
+                <i class="fa fa-edit in" id='modl1' (click)="modal()"></i>
+              </div>
+            </div>
+
+            <div class="name ">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+
+              <h6> <b>Phone Number</b></h6>
+              <input type="text" class="form-control col-md-10 offset-md-2 input" id="input1" value="{{mobile}}"
+                #Mobile>
+              <div class="row details">
+
+                <b class="ins" id="ins">{{mobile}}</b>
+                &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-edit ins" id='modl' (click)="modal1()"></i>
+              </div>
+            </div>
+            <div class="name ">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+
+              <div class="row gmails">
+                <b>{{email}}</b>
+
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+        <div class="card2">
+          <img class="rounded-circle z-depth-2 " alt="" src="rounded-crircle" [src]="urllink"
+            data-holder-rendered="true" width="200px" class="profileimg">
+          <div class="camera">
+            <i class="fa fa-camera" aria-hidden="true" (click)="selectImage($event)"> <input type="file" name=""
+                id="file" hidden="hidden"></i>
+          </div>
+
+        </div>
+        <div class="card card3">
+
+          <div class="card op option" style="margin-top: 25%;">
+            <b>Bookmarks</b>
+          </div>
+          <div class="card op option">
+            <a href="https://play.google.com/store/apps/details?id=com.fonixss.examhublk" target="blank"> <b
+                style="color: white;">Invite friends</b> </a>
+          </div>
+
+        </div>
+
+        <button class="btn btn-info col-md-4 offset-md-5 update" id="update"
+          (click)="updateDetails(name,Mobile)">Update</button>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- modal -->
+  <div class="home" width="200px" height="200px" style="cursor: pointer;" (click)="home()">
+    <p style="color: black;">s</p>
+  </div>
+
+</body>
+
+</html>

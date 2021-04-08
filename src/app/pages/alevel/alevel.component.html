@@ -1,0 +1,140 @@
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script> -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"> -->
+<br>
+<body>
+    <div class="body">
+      <!-- <ng-container *ngComponentOutlet="loadComponents"></ng-container> -->
+      <nav class="col-md-10 offset-md-1 nav" id="nav">
+        <ul class="menu ">
+            <li class="logo" ><a href="#" ></a></li>
+
+            <li class="item float-right " ><a  style="text-decoration: none;color: red;font-size: 20px;" ><img class="rounded-circle z-depth-2 " style="margin-top: -10px;" alt="" src="rounded-crircle" [src]="urllink" data-holder-rendered="true" width="50px"  height="50px"></a></li>
+            <li class="item button secondary "><a style="text-decoration: none;color: white;cursor: pointer;font-size:10px;">{{user}}</a></li>
+            <li class="item button "><a style="text-decoration: none;color: white;cursor: pointer;font-size:10px;"(click)="leadeboard()" >Leader Board</a></li>
+            <li class="item button "><a style="text-decoration: none;color: white;cursor: pointer;font-size:10px;"(click)="static()">Statistics</a></li>
+
+            <li class="toggle" ><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+
+<div class="d-flex justify-content-center " >
+  <div class="card1 " >
+  <img src=".../../../../../assets/1.png" alt="" class="img-fluid">
+  </div>
+  </div>
+<br>
+<div class="container">
+  <div id="content-wrapper">
+
+
+		<div class="column">
+
+
+			<div id="slide-wrapper" >
+        <i class="fa fa-chevron-circle-left arrow" style="font-size: 30px;color: white;"  id="slideLeft"  ></i>
+
+
+				<div id="slider" class="slider" >
+          <!-- <img class="thumbnail active" src="images/shoe1.jpg"> -->
+          <div *ngFor="let item of subject"  class="fig slider-inner" id="slider-inner" style="width: 500px;cursor: pointer;" (click)="mainCategories(item)">
+            <div style="width: 300px;padding-top: 10px;">
+              <img src="{{item.image}}" alt="" width="110px" height="70px" style="border-radius:5%">
+            </div>
+            <div style="background-color: green;width: 100%; height: 30px;" class="mt-2">
+              <h6 class="pt-2" style="color: white;font-weight: 500;">{{item.category_name}}</h6>
+            </div>
+            </div>
+
+				</div>
+        <i class="fa fa-chevron-circle-right arrow" style="font-size: 30px;color: white;" id="slideRight" ></i>
+
+			</div>
+		</div>
+    </div>
+</div>
+    </div>
+<!-- <div class="container  col-sm-8">
+
+
+<div class="glider-contain multiple" >
+
+    <i class="fa fa-chevron-circle-left glider-prev preval" style="font-size: 30px;color: white;"></i>
+
+  <div class="glider gliderAlmain"  >
+
+    <figure class="fig1" >
+
+        <div *ngFor="let item of subject" class="fig " style="width: 500px;" (click)="mainCategories(item)">
+          <div style="width: 300px;">
+            <img src="{{item.image}}" alt="" width="110px" height="70px" >
+          </div>
+          <div>
+            <h6 >{{item.category_name}}</h6>
+          </div>
+
+        </div>
+    </figure>
+
+</div>
+
+  <i class="fa fa-chevron-circle-right glider-next nextal" style="font-size: 30px;color: white;"></i>
+
+<div id=dots class="glider-dots"></div>
+</div>
+</div>
+</div> -->
+
+ <div  style="padding-top: 0px;">
+    <div class="col-md-4 grade offset-4" >
+        <h4 style="text-align: center;" class="">{{sub}}</h4>
+        </div>
+
+      <div class="container col-md-9 transparent slide" >
+
+          <div class="container slide2">
+
+
+              <div class="glider-contain multiple">
+
+                  <i class="fa fa-chevron-circle-left glider-prev pre" style="font-size: 30px;color: white;"></i>
+
+                <div class="glider gliderAL">
+                  <figure class="fig2" style="justify-content: unset;
+                  align-content: un;">
+                    <div *ngFor="let s of subcategory" class="row col-md-12 sub" (click)="getquestion(s)" >
+                      <div class="col-sm " >
+                        <img src="{{s.image}}" alt="" class="imgslide" height="60px" width="500px" style="border-radius:5%">
+                      </div>
+                      <div class="col-sm">
+                        <p> <b>{{s.subcategory_name}}</b></p>
+                      </div>
+
+                      <div>
+
+                      </div>
+
+                      </div>
+                  </figure>
+
+              </div>
+
+                <i class="fa fa-chevron-circle-right glider-next  nex" style="font-size: 30px;color: white;"></i>
+
+              <div id=dots class="glider-dots"></div>
+              </div>
+            </div>
+            </div>
+
+ </div>
+ <div class="home" width="200px" height="200px" style="cursor: pointer;"  (click)="home()">
+  <p style="color: black;">s</p>
+  </div>
+
+    <br>
+<div class="fot"></div>
+</body>

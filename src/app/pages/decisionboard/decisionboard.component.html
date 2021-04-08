@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div class="body">
+    <!-- <ng-container *ngComponentOutlet="loadComponents"></ng-container> -->
+    <div class="container offset-md-2 style-04 col-sm-8">
+
+      <div class="row d-flex  justify-content-center " style="background-color: white;">
+        <div class="coins"><img src="../../../assets/coins.png" class="img-fluid fi" alt="" width="50px"><br><b
+            class="conistfont">Total Coins</b> <br><b class="">{{totalCoins}}</b> </div>
+
+        <div class="coins"><img src="../../../assets/score.png" class="img-fluid" alt="" width="40px"> <br><b
+            class="conistfont">Total Score</b> <br><b class="">{{totalscore}}</b> </div>
+      </div>
+      <br>
+
+      <div class="d-flex justify-content-center  ">
+        <div class="card col-md-8 maesage bg-success">
+
+          <div style="text-align: center;">
+            <p>සුබ පැතුම්..!! <br>
+              ඊළග Level එකට ඔබව තේරී පත් වී ඇත </p>
+
+          </div>
+          <div class="row">
+
+            <div>
+              <div class="row">
+                <img src="../../../assets/hand2.png" alt="" width="50px" class="hand">
+                <p class="like">{{correct}}</p><br>
+              </div>
+              <div class="row">
+                <img src="../../../assets/hand1.png" alt="" width="50px" class="hand">
+                <p class="like">{{wrong}}</p>
+              </div>
+            </div>
+
+            <div class="circle">
+
+              <circle-progress [percent]="presentages" [radius]="100" [outerStrokeWidth]="10" [innerStrokeWidth]="10"
+                [space]="-10" [backgroundStrokeWidth]="0" [outerStrokeColor]="'#4882c2'" [innerStrokeColor]="'#e7e8ea'"
+                [titleFontSize]="24" [unitsFontSize]="24" [showSubtitle]="false" [animation]="true"
+                [animationDuration]="300" [startFromZero]="false" [responsive]="true" [showTitle]="true"
+                [titleFontSize]="40">
+              </circle-progress>
+
+
+            </div>
+            <div class="score ">
+              <div class="row scorepart">
+                <img src="../../../assets/coins.png" alt="" width="60px">
+                <p class="coinsa">{{coins}}</p>
+              </div>
+              <div class="row scorepart">
+                <img src="../../../assets/score.png" alt="" width="50px">
+                <p class="scoren">{{score}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row offset-md-1  col-md-10 event">
+
+        <div class="card card1 col-md-5" (click)="datasave()">
+          <p><b> ඊළග වටයට යන්න </b></p>
+        </div>
+        <div class="card card1 col-md-5" (click)="ChevkCorrect()">
+          <p><b> හරී වැරදි බලන්න</b> </p>
+
+        </div>
+
+        <div class="card card1 col-md-5">
+          <p><b> Share Your Score </b></p>
+
+        </div>
+        <div class="card card1 col-md-5">
+          <p><b> Rate Us</b> </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="home" width="200px" height="200px" style="cursor: pointer;" (click)="home()">
+    <p style="color: black;">s</p>
+  </div>
+
+</body>
+
+</html>

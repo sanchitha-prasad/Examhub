@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="body">
+
+    <div class="float-left left card card2 col-md-2">
+      <img src="../../../assets/star1.png" alt="" width="80px" height="80px" class="star1">
+      <p class="num1"><b>{{myRank}}</b> </p>
+      <img data-holder-rendered="true" alt="" style="" src="../../../assets/userr1.png" [src]="myProfile" width="100px"
+        height="100px" class="rounded-circle z-depth-2 imagemy">
+      <h4 class="hfour">{{my}}</h4>
+      <button class="float-right button1 btn"><b> {{myScore}}</b> </button>
+      <br>
+    </div>
+    <div class="row">
+
+      <div class="row style-01 d-flex   offset-sm-0">
+
+        <div class="secondplace profile">
+          <img class="rounded-circle z-depth-2 img1" style="margin-left: -1px;margin-top: -1px;"
+            data-holder-rendered="true" alt="" src="rounded-crircle" [src]="secondProfile" alt="" width="93px">
+          <img src="../../../assets/two.png" alt="" class="two" width="45px">
+          <p class="name"> <b>{{second}}</b> </p>
+          <p class="numer"> <b>{{secondScore}}</b> </p>
+        </div>
+
+        <div class="first profile ">
+          <img src="../../../assets/crown.png" alt="" width="50px" class="crown">
+          <img class="rounded-circle z-depth-2 img1" style="margin-left: -2px;margin-top: -26px;"
+            data-holder-rendered="true" alt="" src="rounded-crircle" [src]="firstsProfile" alt="" width="101px">
+          <img src="../../../assets/one.png" alt="" class="one" width="40px">
+          <p class="name "> <b>{{first}}</b> </p>
+          <p class="numer"> <b>{{firstscore}}</b> </p>
+        </div>
+
+        <div class="third profile">
+          <img class="rounded-circle z-depth-2 img1" style="margin-left: -1px;margin-top: -1px;"
+            data-holder-rendered="true" alt="" src="rounded-crircle" [src]="thirdProfile" alt="" width="93px">
+          <img src="../../../assets/three.png" alt="" class="three" width="45px">
+          <p class="name"> <b>{{third}}</b> </p>
+          <p class="numer"> <b>{{thirdScore}}</b> </p>
+        </div>
+        <div class="container  overflow-auto  col-md-10 board">
+          <div class="card1 row" *ngFor="let l of arr; ">
+
+            <img src="../../../assets/star1.png" alt="" width="50px" height="50px" class="star" aria-placeholder="">
+            <p class="num"><b>{{l.rank}}</b> </p>
+            <img class="rounded-circle z-depth-2 " data-holder-rendered="true" alt="" src="rounded-crircle"
+              [src]="l.profile" alt="" data-holder-rendered="true" width="60px">
+            <p class="namemy"><b> {{l.name}}</b> </p>
+
+            <button class=" button btn"><b>{{l.score}}</b> </button>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="  float-right char">
+      <img src="../../../assets/char.png" alt="" width="160px" height="300px">
+    </div>
+  </div>
+  <div class="home" width="200px" height="200px" style="cursor: pointer;" (click)="home()">
+    <p style="color: black;">s</p>
+  </div>
+</body>
+
+</html>

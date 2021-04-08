@@ -1,0 +1,1358 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../../../assets/FM-Rajantha.TTF);
+  }
+  /* desktop size */
+
+  body{
+    background-image: url(../../../assets/ta.jpg);
+    background-size: 100% 100%;
+    height:100.1vh;
+    width: 100%;
+    /* position: absolute; */
+    margin-top: -25px;
+
+  }
+  .body{
+    background-image: url(../../../assets/backgroun1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    /* background-position: inherit; */
+    height: 100%;
+    position: absolute;
+    /* margin-left: -1vh; */
+    width: 100%;
+   /* margin-top: 20px; */
+
+
+  }
+  .card{
+    font-family: myFirstFont;
+  }
+
+  nav {
+
+    /* top: 90px ; */
+    left: 6px;
+    border-radius: 2%;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    height: 70px;
+    top: 10vh;
+z-index: 20;
+    /* width: 1289px; */
+
+
+  }
+  .logoimg{
+
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border:1px solid rgb(33, 236, 6);
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .logo a:hover {
+    text-decoration: none;
+  }
+  .menu li {
+    font-size: 10px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+  .logo a,
+  .toggle a {
+    font-size: 20px;
+  }
+  .button.secondary {
+
+
+    border-bottom: 1px #444 solid;
+
+  }
+
+  /* Mobile menu */
+  .menu {
+    /* margin-left: 1500px;  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .item.button {
+    order: 2;
+
+
+  }
+  .button:not(.secondary) a:hover {
+    background: #93ec02;
+    border-color: #fd0707;
+  }
+  .button.secondary a:hover {
+    color:white;
+    background: #93ec02;
+    border-color: #fd0707;
+  }
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  .item.active {
+    display: block;
+  }
+  .button a {
+    padding: 7.5px 15px;
+    background: rgb(4, 29, 255);
+    /* border: 1px #fcf8f8 solid; */
+    transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius:50em;
+
+
+  }
+  .button.secondary a {
+    background: transparent;
+    background-color: red;
+    /* margin-left: 20px;    */
+  }
+
+  /* Navbar Toggle */
+  .toggle {
+    cursor:pointer;
+  }
+  .bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .bars:before,
+  .bars:after {
+    background: #999;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .bars:before {
+    top: 5px;
+  }
+  .bars:after {
+    top: -5px;
+  }
+
+
+
+  @media (max-width: 575.98px) {  }
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  body{
+    background-image: url(../../../assets/ta.jpg);
+    height:103vh;
+    margin-top: -50px;
+
+  }
+  .body{
+    background-image: url(../../../assets/backgroun1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    /* background-position: inherit; */
+    height: 100%;
+    position: absolute;
+    margin-left: -15px;
+   margin-top: 20px;
+
+
+  }
+
+
+
+
+.card {
+  top: 15vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 0%;
+    height: 180px;
+    left: 50px;
+
+  }
+  .card:hover {
+    box-shadow: 20px 50px 20px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  .marg{
+      margin: 10px 10px 10px;
+  }
+  .text-fluid{
+    font-size: 20px;
+    font-weight: 500;
+    color: red;
+    margin-left: -0px;
+    top: 150px;
+    text-align: center;
+
+
+  }
+  .imgdiv{
+
+      margin-left: 5px ;
+
+
+  }
+  .img3{
+      margin-top: 90px;
+  }
+  .ole{
+    /* margin-top: 50px; */
+    position: absolute;
+    margin: 145px 40px 60px;
+    font-family: myFirstFont;
+  }
+.ale{
+  position: absolute;
+  margin: 145px 60px 50px;
+  /* padding-top: 50px; */
+
+}.sixal{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.mobile{
+  margin-top: -5vh;
+  margin-right: 5%;
+  height: 50px;
+  width: 280px;
+
+
+}
+.hint{
+    font-family: myFirstFont;
+}
+.divale{
+    margin-top: -18px
+}
+.slide{
+    margin-left: 195px;
+   height: 300px;
+   width: 950px;
+}
+.transparent{
+  top: 20vh;
+    background-color: rgba(39, 39, 39, 0.8);
+    /* border-radius: 2%; */
+    width: 57%;
+    left:-5%;
+    height: 220px;
+    border-radius: 2%;
+}
+.slide2{
+    padding-top: 30px;
+}
+.card-img{
+    width: 20px;
+    margin: 10px 10px 10px;
+}
+.glider-next{
+  top: 75px;
+ /* left: 522px; */
+font-size: 20px;
+}
+.glider-prev{
+  top: 75px;
+  font-size: 20px;
+  /* left: -15px; */
+}
+
+ }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .card {
+    top: 10vh;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 0%;
+      height: 30vh;
+      left: 50px;
+
+    }
+    .card:hover {
+      box-shadow: 20px 50px 20px 0 rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+
+    .marg{
+        margin: 10px 10px 30px;
+    }
+    .text-fluid{
+      font-size: 30px;
+      font-weight: 500;
+      color: red;
+      margin-left: -0px;
+      top: 150px;
+      text-align: center;
+
+
+    }
+    .imgdiv{
+
+        margin-left: 5px ;
+
+
+    }
+    .img3{
+        margin-top: 90px;
+
+    }
+    .ole{
+      /* margin-top: 50px; */
+      position: absolute;
+      margin:175px 40px 60px;
+      font-family: myFirstFont;
+    }
+  .ale{
+    position: absolute;
+    margin:175px 60px 50px;
+    /* padding-top: 50px; */
+
+  }.sixal{
+      margin-top: -15px;
+      margin-left: 30px;
+  }
+  .mobile{
+    margin-top: -190px;
+    margin-right: 8%;
+    height: 50px;
+    /* width: 250px; */
+
+
+  }
+  .hint{
+      font-family: myFirstFont;
+  }
+  .divale{
+      margin-top: -18px
+  }
+  .slide{
+      margin-left: 195px;
+     height: 300px;
+     width: 950px;
+  }
+  .transparent{
+    margin-top: 10vh;
+      background-color: rgba(39, 39, 39, 0.8);
+      /* border-radius: 2%; */
+      width: 57%;
+      left:-2%;
+      height: 25vh;
+      border-radius: 2%;
+  }
+  .slide2{
+      padding-top: 10px;
+  }
+  .card-img{
+      width: 20px;
+      margin: 10px 10px 10px;
+  }
+  .glider-next{
+    top: 75px;
+    font-size: 20px;
+   /* left: 690px; */
+  }
+  .glider-prev{
+    top: 75px;
+    font-size: 20px;
+    /* left: -15px; */
+  }
+ }
+
+
+@media (min-width: 1200px) and (max-width:1440px) {
+  @font-face {
+    font-family: myFirstFont;
+  src: url(../../../assets/FM-Rajantha.TTF);
+  }
+
+.main{
+  margin-top: 10vh;
+}
+  .imgslide{
+    width: 100%;
+    height: 130%;
+
+  }
+
+  .log{
+    margin-left: 0px;
+  }
+
+.imggr{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  top: 10vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 0%;
+    height: 220px;
+    left: 50px;
+
+  }
+  .card:hover {
+    box-shadow: 20px 50px 20px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  .marg{
+      margin: 10px 10px 20px;
+  }
+  .text-fluid{
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
+    margin-left: 1px;
+    top: 140px;
+
+    font-family: myFirstFont;
+  }
+  .imgdiv{
+
+      /* margin-left: 20px ; */
+      width: 200px;
+
+
+  }
+  .sixal{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .img3{
+      margin-top: 90px;
+  }
+  .ole{
+    margin-left: 60px;
+    margin-top: -5px;
+  }
+.ale{
+    margin-left: 80px;
+    margin-top: -5px;
+}.six{
+    margin-top: 30px;
+}
+.dixt{
+  margin-top: -20px;
+}
+.mobile{
+    margin-top: -180px;
+    margin-right: 10vh;
+    height: 0px;
+    width: 35vh;
+
+
+}
+.hint{
+    font-family: myFirstFont;
+}
+.divale{
+    margin-top: -18px
+}
+.slide{
+    margin-left: 195px;
+   height: 300px;
+   width: 950px;
+}
+.transparent{
+  /* top: 80px; */
+    /* background-color: rgba(39, 39, 39, 0.8); */
+    /* border-radius: 2%; */
+    width: 57.50%;
+    /* left: 10px; */
+    height: 26vh;
+    right: 2rem;
+    margin-top: 10vh;
+    border-radius: 2%;
+}
+.slide2{
+    padding-top: 15px;
+}
+.card-img{
+    width: 10px;
+    margin: 10px 10px 10px;
+    height: 100px;
+}
+.glider-next{
+  top: 85px;
+ /* left: 810px; */
+}
+.glider-prev{
+  top: 85px;
+  /* left: -15px; */
+}
+
+
+}
+
+
+
+
+  @media only screen and (max-width: 1199px) {
+    .body{
+      display: none;
+    }
+    body{
+      background-image: none;
+    }
+    #download{
+      display: block;
+    }
+  }
+  @media(min-width:1200px){
+    #download{
+      display: none;
+    }
+  }
+
+  @media (min-width: 1440px) and ( max-width:1920px)
+
+  {
+
+
+
+    @font-face {
+      font-family: myFirstFont;
+    src: url(../../../assets/FM-Rajantha.TTF);
+    }
+
+
+
+    .imgslide{
+      width: 100%;
+      height: 130%;
+
+    }
+
+    .log{
+      margin-left: 0px;
+    }
+
+  .imggr{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    top: 10vh;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 0%;
+      height: 220px;
+      left: 50px;
+
+    }
+    .card:hover {
+      box-shadow: 20px 50px 20px 0 rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+
+    .marg{
+        margin: 10px 10px 20px;
+    }
+    .text-fluid{
+      font-size: 30px;
+      font-weight: 500;
+      color: red;
+      margin-left: 1px;
+      top: 140px;
+
+      font-family: myFirstFont;
+    }
+    .imgdiv{
+
+        margin-left: 20px ;
+        width: 180px;
+
+
+    }
+    .sixal{
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+    .img3{
+        margin-top: 90px;
+    }
+    .ole{
+      margin-left: 60px;
+      margin-top: -5px;
+    }
+  .ale{
+      margin-left: 80px;
+      margin-top: -5px;
+  }.six{
+      margin-top: 30px;
+  }
+  .dixt{
+    margin-top: -20px;
+  }
+  .mobile{
+      margin-top: -180px;
+      margin-right: 15vh;
+      height: 0px;
+      width: 35vh;
+
+
+  }
+  .hint{
+      font-family: myFirstFont;
+  }
+  .divale{
+      margin-top: -18px
+  }
+  .slide{
+      margin-left: 195px;
+     height: 300px;
+     width: 950px;
+  }
+  .transparent{
+    /* top: 80px; */
+      /* background-color: rgba(39, 39, 39, 0.8); */
+      /* border-radius: 2%; */
+      width: 57.50%;
+      /* left: 10px; */
+      height: auto;
+      right: 1vh;
+      margin-top: 10vh;
+      border-radius: 2%;
+  }
+  .slide2{
+      padding-top: 15px;
+  }
+  .card-img{
+      width: 10px;
+      margin: 10px 10px 10px;
+      height: 100px;
+  }
+  .glider-next{
+    top: 85px;
+   /* left: 810px; */
+  }
+  .glider-prev{
+    top: 85px;
+    /* left: -15px; */
+  }
+
+
+/* nav{
+  margin-top: 10px;
+} */
+
+  }
+
+
+
+  @media
+(min-width : 1920px) and (max-width:3000px)
+
+{
+
+
+  @font-face {
+    font-family: myFirstFont;
+  src: url(../../../assets/FM-Rajantha.TTF);
+  }
+
+
+
+  .imgslide{
+    /* width: 200px; */
+    height: 200px;
+  }
+
+  .log{
+    margin-left: 0px;
+  }
+
+.imggr{
+  width: 100%;
+  height: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.card {
+  top: 15vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 0%;
+    height: 220px;
+    left: 50px;
+
+  }
+  .card:hover {
+    box-shadow: 20px 50px 20px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  .marg{
+      margin: 10px 10px 20px;
+  }
+  .text-fluid{
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
+    margin-left: 1px;
+    top: 140px;
+
+    font-family: myFirstFont;
+  }
+  .imgdiv{
+
+      margin-left: 20px ;
+      width: 180px;
+
+
+  }
+  .sixal{
+    margin-left: 22%;
+    margin-top: 10px;
+  }
+  .img3{
+      margin-top: 90px;
+  }
+  .ole{
+    margin-left: 28%;
+    margin-top: -5px;
+  }
+.ale{
+    margin-left: 35%;
+    margin-top: -5px;
+}.six{
+    margin-top: 30px;
+}
+.dixt{
+  margin-top: -20px;
+}
+.mobile{
+    margin-top: -150px;
+    margin-right: 15vh;
+    height: 0px;
+    width: 35vh;
+
+
+}
+.hint{
+    font-family: myFirstFont;
+}
+.divale{
+    margin-top: -18px
+}
+.slide{
+    margin-left: 195px;
+   height: 300px;
+   width: 950px;
+}
+.transparent{
+  top: 10vh;
+    /* background-color: rgba(39, 39, 39, 0.8); */
+    /* border-radius: 2%; */
+    width: 57.50%;
+    /* left: 10px; */
+    height: 26vh;
+    left: 2vh;
+    margin-top: 10vh;
+    border-radius: 2%;
+}
+.slide2{
+    padding-top: 15px;
+}
+.card-img{
+    width: 10px;
+    margin: 10px 10px 10px;
+    height: 100px;
+}
+.glider-next{
+  top:105px;
+ /* left: 810px; */
+ font-size: 40px;
+}
+.glider-prev{
+  top: 105px;
+  /* left: -15px; */
+  font-size: 40px;
+}
+
+}
+
+
+
+@media
+(min-width : 3000px)
+
+{
+
+
+  @font-face {
+    font-family: myFirstFont;
+  src: url(../../../assets/FM-Rajantha.TTF);
+  }
+nav{
+  /* margin-left: 330px; */
+  top: 5vh;
+}
+
+/* .menu {
+  padding-left: 600px;
+} */
+
+
+@font-face {
+  font-family: myFirstFont;
+src: url(../../../assets/FM-Rajantha.TTF);
+}
+
+.body{
+  top: 20vh;
+left: 25%;
+  width: 50%;
+  height: 60%;
+}
+
+.imgslide{
+  width: 400px;
+  height: 200px;
+}
+
+.log{
+  margin-left: 0px;
+}
+
+.imggr{
+width: 150%;
+height: 90%;
+margin-left: auto;
+margin-right: auto;
+}
+.card {
+top: 11vh;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 0%;
+  height: 300px;
+  left: 50px;
+
+}
+.card:hover {
+  box-shadow: 20px 50px 20px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.marg{
+    margin: 10px 10px 20px;
+}
+.text-fluid{
+  font-size: 50px;
+  font-weight: 500;
+  color: red;
+  margin-left: 1px;
+  top: 140px;
+
+  font-family: myFirstFont;
+}
+.imgdiv{
+
+    margin-left: 20px ;
+    width: 180px;
+
+
+}
+.sixal{
+  margin-left: 30px;
+  margin-top: -20px;
+  /* font-size: 50px; */
+}
+.img3{
+    margin-top: 90px;
+}
+.ole{
+  margin-left: 60px;
+  margin-top: -40px;
+}
+.ale{
+  margin-left: 80px;
+  margin-top: -40px;
+}.six{
+  margin-top: 30px;
+}
+.dixt{
+margin-top: -20px;
+}
+.mobile{
+  margin-top: -150px;
+  margin-right: 7vh;
+  height: 0px;
+  width: 22vh;
+
+
+}
+.hint{
+  font-family: myFirstFont;
+}
+.divale{
+  margin-top: -18px
+}
+.slide{
+  margin-left: 195px;
+ height: 300px;
+ width: 950px;
+}
+.transparent{
+top: 7vh;
+  /* background-color: rgba(39, 39, 39, 0.8); */
+  /* border-radius: 2%; */
+  width: 57.50%;
+  /* left: 10px; */
+  height: 26vh;
+  left: 1vh;
+  margin-top: 10vh;
+  border-radius: 2%;
+}
+.slide2{
+  padding-top: 15px;
+}
+.card-img{
+  width: 10px;
+  margin: 10px 10px 10px;
+  height: 100px;
+}
+.glider-next{
+top:105px;
+/* left: 810px; */
+font-size: 40px;
+}
+.glider-prev{
+top: 105px;
+/* left: -15px; */
+font-size: 40px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* mobile view */
+
+@media only screen and (max-device-width: 480px) {
+    body{
+      background-image: none;
+      /* width: 100%; */
+      /* position: inherit; */
+      height: 100%;
+
+
+  }
+  .body{
+    background-image: none;
+
+    /* background-attachment: fixed; */
+    /* background-position: inherit; */
+    /* height: 100%; */
+    /* position: absolute; */
+     /* margin-left: -8px; */
+
+
+  }
+
+.card {
+  top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    height: 150px;
+    left: 5px;
+
+  }
+  .card:hover {
+    box-shadow: 20px 50px 20px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  .marg{
+      margin: 10px 1px 10px;
+  }
+  .text-fluid{
+    font-size: 9px;
+    font-weight: 500;
+    color: red;
+    margin-left: -10px;
+    top: 150px;
+    /* text-align: right; */
+    margin-top: 10px;
+    font-family: myFirstFont;
+  }
+  .imgdiv{
+
+      margin-left: -10px ;
+      width: 100px;
+
+
+  }
+  .sixal{
+    margin-left: 10px;
+  }
+  .img3{
+      margin-top: 90px;
+  }
+  .ole{
+    margin-left: 0px;
+    margin-top: -30px;
+    position: absolute;
+  }
+.ale{
+  margin-left: 10px;
+  margin-top: -30px;
+  position: absolute;
+}.six{
+    margin-top: 30px;
+}
+.mobile{
+    display: none;
+
+
+}
+.hint{
+    font-family: myFirstFont;
+}
+.divale{
+    margin-top: -18px
+}
+/* .slide{
+    margin-left: 195px;
+   height: 300px;
+   width: 950px;
+} */
+.transparent{
+  top: 10px;
+    background-color: rgba(39, 39, 39, 0.8);
+    /* border-radius: 2%; */
+    width: 90%;
+    left: 5px;
+    height: 80%;
+}
+.slide2{
+    padding-top: 40px;
+}
+.card-img{
+    width: 10px;
+    margin: 10px 10px 10px;
+}
+.glider-next{
+  top: 85px;
+left: -20px;
+position: relative;
+}
+.glider-prev{
+  display: none;
+  top: 85px;
+  left: -15px;
+}
+
+
+
+}
+
+
+@media (max-width: 870px) {
+
+
+
+}
+
+@media (max-width: 570px) {
+
+}
+figure{
+  display: flex;
+  margin: 0px 0px 20px;
+  padding: .7em;
+  /* width: 100%; */
+
+
+
+
+
+}
+figure:hover{
+  box-shadow: 20px 50px 20px 0 rgba(0,0,0,0.2);
+}
+blockquote {
+  padding: .5em;
+}
+.glider-next{
+  /* right: -50px; */
+}
+.cardimgslide{
+  width: 50px;
+}
+
+
+/* nav */
+
+
+@media (max-width: 1200px) {
+
+
+}
+/* Tablet menu */
+@media all and (min-width: 468px) {
+
+  .menu {
+      justify-content: center;
+  }
+
+  .logo {
+      flex: 1;
+  }
+
+  .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+      order: 2;
+  }
+  .button.secondary {
+      border: 0;
+
+  }
+  .button a {
+      padding: 7.5px 15px;
+      background: rgb(4, 29, 255);
+      /* border: 1px #fcf8f8 solid; */
+      transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      border-radius:50em;
+  }
+  .button.secondary a {
+      background: transparent;
+      background-color: red;
+  }
+  .button a:hover {
+      text-decoration: none;
+      transition:all .25s;
+  }
+  .button:not(.secondary) a:hover {
+      background: #93ec02;
+      border-color: #fd0707;
+  }
+  .button.secondary a:hover {
+      color:white;
+      background: #93ec02;
+      border-color: #fd0707;
+  }
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+
+  .item {
+      display: block;
+      width: auto;
+  }
+  .toggle {
+      display: none;
+  }
+  .logo {
+      order: 0;
+
+  }
+  .item {
+      order: 1;
+
+  }
+  .button {
+      order: 2;
+
+  }
+  .menu{
+    margin-left: 60%;
+  }
+  .menu li {
+      /* padding: 10px 20px; */
+
+
+  }
+  .menu li.button {
+      padding-right: 50px;
+      color: red;
+
+
+  }
+  .toglewview{
+      color: red;
+  }
+
+}
+@media (max-width: 1200px) {
+
+  nav {
+z-index: 20;
+    top: 10vh ;
+    left: 8px;
+    border-radius: 2%;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    /* width: 1289px; */
+
+  }
+  .item {
+      display: block;
+      width: auto;
+  }
+  .toggle {
+      display: none;
+  }
+  .logo {
+      order: 0;
+
+  }
+  .item {
+      order: 1;
+
+  }
+  .button {
+      order: 2;
+
+  }
+  .menu{
+    margin-left: 50%;
+  }
+  .menu li {
+      /* padding: 10px 20px; */
+
+
+  }
+  .menu li.button {
+      padding-right: 50px;
+      color: red;
+
+
+  }
+  .toglewview{
+      color: red;
+  }
+}
+
+.notification {
+
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+
+
+.notification .badge {
+  position: absolute;
+  top: 0px;
+  /* right: -10px; */
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+/* .nav{
+  display:none;
+} */
+.notifi-box {
+  z-index: 0;
+  background-color: white;
+	width: 300px;
+	height: 0px;
+	opacity: 0;
+	position: absolute;
+	top: 45px;
+  right: 5px;
+ left: -100px;
+	transition: 1s opacity, 250ms height;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.notifi-box h2 {
+	font-size: 14px;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	color: #999;
+}
+.notifi-box h2 span {
+	color: #f00;
+}
+.notifi-item {
+	display: flex;
+	border-bottom: 1px solid #eee;
+	padding: 15px 5px;
+	margin-bottom: 15px;
+  cursor: pointer;
+
+}
+.notifi-item:hover {
+	background-color: #eee;
+}
+
+.notifi-item .text h4 {
+	color: #777;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.notifi-item .text p {
+	color: #aaa;
+	font-size: 12px;
+}
+.text-fluid{
+
+  font-family: myFirstFont;
+}

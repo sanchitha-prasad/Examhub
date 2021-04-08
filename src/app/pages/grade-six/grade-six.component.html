@@ -1,0 +1,106 @@
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script> -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"> -->
+<br>
+<body class="d-flex justify-content-center ">
+    <div class="body">
+
+      <nav class="col-md-10 offset-md-1 nav" id="nav">
+        <ul class="menu ">
+            <li class="logo" ><a href="#" ></a></li>
+
+            <li class="item float-right " ><a  style="text-decoration: none;color: red;font-size: 20px;" ><img class="rounded-circle z-depth-2 " style="margin-top: -10px;" alt="" src="rounded-crircle" [src]="urllink" data-holder-rendered="true" width="50px"  height="50px"></a></li>
+            <li class="item secondary "><a style="text-decoration: none;color: white;cursor: pointer;">{{user}}</a></li>
+            <li class="item button "><a style="text-decoration: none;color: white;cursor: pointer;"(click)="leadeboard()" >Leader Board</a></li>
+            <li class="item button "><a style="text-decoration: none;color: white;cursor: pointer;font-size:10px;"(click)="static()">Statistics</a></li>
+            <!-- <img src="../../../assets//home_button.png" alt="" width="130px" style="position: absolute;left: 88%;top: 15%;cursor: pointer;" (click)="home()"> -->
+            <li class="toggle" ><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+<div class="main">
+
+
+<div class="d-flex justify-content-center " >
+  <div class="card1 " >
+    <img src="../../../assets/3.png" alt="" class="img-fluid">
+  </div>
+  </div>
+<br>
+  <div class="d-flex justify-content-center gradeall" >
+    <div class="card marg " (click)="grade(1)">
+      <b>6ශ්‍රේණිය</b>
+    </div>
+    <div class="card marg" (click)="grade1(2)">
+      <b>7ශ්‍රේණිය</b>
+    </div>
+    <div class="card marg"  (click)="grade2(3)">
+      <b>8ශ්‍රේණිය</b>
+    </div>
+    <div class="card marg"(click)="grade3(4)" >
+     <b>9ශ්‍රේණිය</b>
+    </div>
+
+    <div class="card marg" (click)="grade4(5)">
+      <b>10ශ්‍රේණිය</b>
+    </div>
+
+    </div>
+    </div>
+
+
+
+  <div class="col-md-2 grade offset-5" >
+    <h4 style="text-align: center;" class="">{{gradeal}}</h4>
+    </div>
+
+    <div class="container col-md-10 transparent slide" >
+
+      <div class="container slide2">
+
+
+          <div class="glider-contain multiple">
+
+              <i class="fa fa-chevron-circle-left glider-prev prev1" style="font-size: 30px;color: white;"></i>
+
+            <div class="glider glider6">
+              <figure class="fig2"  style="text-align: center;justify-content: unset;
+              align-content: unset;
+              width: 100%;
+              min-width:k ;">
+
+                    <!-- <img src="../../../assets/logo.png" alt="" class="imgslide" width="200px"> -->
+                    <p style="text-align: center;color: red;">{{this.message}}</p>
+                    <div *ngFor="let s of maincategory" class="row col-md-12 sub" (click)="subject(s)">
+                      <div class="col-sm" >
+                        <img style=" background-color: white;width: 300px;border-radius: 5%;" src="{{s.image}}" alt="" class="imgslide" height="80px" width="200px">
+                      </div>
+                      <div class="col-sm" style="text-align: center;">
+         <b style="text-align: center;margin-left: 20px;font-size:18px;color: white;">{{s.subcategory_name}}</b>
+                      </div>
+
+                      <div>
+
+                      </div>
+
+                      </div>
+
+              </figure>
+
+
+          </div>
+
+            <i class="fa fa-chevron-circle-right glider-next next1" style="font-size: 30px;color: white;"></i>
+
+          <div id=dots class="glider-dots"></div>
+          </div>
+        </div>
+        </div>
+<div class="fot"></div>
+<div class="home" width="200px" height="200px" style="cursor: pointer;"  (click)="home()">
+  <p style="" class=" text-home"> </p>
+  </div>
+</div>
+</body>

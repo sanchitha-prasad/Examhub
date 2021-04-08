@@ -1,0 +1,818 @@
+.home{
+  position: absolute;
+  margin-left: 46%;
+top: 88%;
+
+  width:120px
+  }
+@media(min-width:1200px) and (max-width:1439px){
+  body{
+    background-image: url(../../../../assets/ta.jpg);
+
+    height: 100vh;
+  }
+
+  .body{
+    background-image: url(../../../../assets/backgroun1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    /* background-position: inherit; */
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    margin-left: -15px;
+   margin-top: -90px;
+    top: 10vh;
+  }
+
+  .style-04 {
+    position: relative;
+    content: "";
+
+    /* background-color:white; */
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin-top: 120px;
+    /* bottom: 10px; */
+    left: 0;
+    right: 0;
+    height: 500px;
+    -moz-border-radius: 100px / 10px;
+
+    border-style: outset;
+
+
+
+    /* border-top: 10px solid #f80303; */
+
+
+}
+.coins{
+  margin: 0px 140px 0px;
+
+}
+.conistfont{
+margin-left: -25px;
+}
+.maesage{
+  height: 200px;
+  color: white;
+}
+.card1{
+  font-size:18px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin:20px 10px 0 ;
+  width: 240px;
+  height: 40px;
+  text-align: center;
+}
+.card1 p {
+margin-top: 5px;
+}
+.hand{
+  margin: 0px 50px 20px;
+}
+.circle{
+  width:120px ;
+  height:120px ;
+  margin-left: 65px;
+  font-size: 50px
+}
+circle-progress{
+  font-size: 40px
+}
+.score{
+  margin-left: 60px;
+  margin-top: -15px;
+}
+.scorepart{
+  margin-left: 10px;
+  margin: 0px 0px 10px;
+}
+.coinsa{
+margin-top: 20px;
+margin-left: 10px;
+}
+.scoren{
+  margin-top: 20px;
+ margin-left: 20px;
+}
+.like{
+  margin-top: 10px;
+  margin-left: -30px;
+}
+.event{
+  left: 45px;
+  width: 650px;
+}
+}
+@media only screen and (min-width: 1280px) and (max-height:800px) and (max-width:1439px) {
+
+  body{
+    background-image: url(../../../../assets/ta.jpg);
+
+    height: 100vh;
+  }
+
+  .body{
+    background-image: url(../../../../assets/backgroun1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    /* background-position: inherit; */
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    margin-left: -15px;
+   margin-top: -90px;
+    top: 11vh;
+  }
+
+  .style-04 {
+    position: relative;
+    content: "";
+
+    /* background-color:white; */
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin-top: 140px;
+    /* bottom: 10px; */
+    left: 0;
+    right: 0;
+    height: 500px;
+    -moz-border-radius: 100px / 10px;
+
+    border-style: outset;
+
+
+
+    /* border-top: 10px solid #f80303; */
+
+
+}
+.coins{
+  margin: 0px 140px 0px;
+
+}
+.conistfont{
+margin-left: -25px;
+}
+.maesage{
+  height: 200px;
+  color: white;
+}
+.card1{
+  font-size:18px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin:20px 10px 0 ;
+  width: 240px;
+  height: 40px;
+  text-align: center;
+}
+.card1 p {
+margin-top: 5px;
+}
+.hand{
+  margin: 0px 50px 20px;
+}
+.circle{
+  width:120px ;
+  height:120px ;
+  margin-left: 65px;
+  font-size: 50px
+}
+circle-progress{
+  font-size: 40px
+}
+.score{
+  margin-left: 60px;
+  margin-top: -15px;
+}
+.scorepart{
+  margin-left: 10px;
+  margin: 0px 0px 10px;
+}
+.coinsa{
+margin-top: 20px;
+margin-left: 10px;
+}
+.scoren{
+  margin-top: 20px;
+ margin-left: 20px;
+}
+.like{
+  margin-top: 10px;
+  margin-left: -30px;
+}
+.event{
+  left: 45px;
+  width: 650px;
+}
+
+}
+@media only screen and (min-width: 1280px) and (min-height:950px)   and (max-width:1439px) {
+
+  body{
+    background-image: url(../../../../assets/ta.jpg);
+
+    height: 100vh;
+  }
+
+  .body{
+    background-image: url(../../../../assets/backgroun1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    /* background-position: inherit; */
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    margin-left: -15px;
+   margin-top: -110px;
+    top: 11vh;
+  }
+
+  .style-04 {
+    position: relative;
+    content: "";
+
+    /* background-color:white; */
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin-top: 200px;
+    /* bottom: 10px; */
+    left: 0;
+    right: 0;
+    height: 500px;
+    -moz-border-radius: 100px / 10px;
+
+    border-style: outset;
+
+
+
+    /* border-top: 10px solid #f80303; */
+
+
+}
+.coins{
+  margin: 0px 140px 0px;
+
+}
+.conistfont{
+margin-left: -25px;
+}
+.maesage{
+  height: 200px;
+  color: white;
+}
+.card1{
+  font-size:18px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin:20px 10px 0 ;
+  width: 240px;
+  height: 40px;
+  text-align: center;
+}
+.card1 p {
+margin-top: 5px;
+}
+.hand{
+  margin: 0px 50px 20px;
+}
+.circle{
+  width:120px ;
+  height:120px ;
+  margin-left: 65px;
+  font-size: 50px
+}
+circle-progress{
+  font-size: 40px
+}
+.score{
+  margin-left: 60px;
+  margin-top: -15px;
+}
+.scorepart{
+  margin-left: 10px;
+  margin: 0px 0px 10px;
+}
+.coinsa{
+margin-top: 20px;
+margin-left: 10px;
+}
+.scoren{
+  margin-top: 20px;
+ margin-left: 20px;
+}
+.like{
+  margin-top: 10px;
+  margin-left: -30px;
+}
+.event{
+  left: 45px;
+  width: 650px;
+}
+
+}
+
+
+
+@media only screen and (min-width: 1280px) and (max-height:720px) and (max-width:1439px) {
+  body{
+    background-image: url(../../../../assets/ta.jpg);
+    height:100vh;
+    /* margin-top: -7px; */
+
+  }
+  .body{
+    background-image: url(../../../../assets/backgroun1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    /* background-position: inherit; */
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    margin-left: -15px;
+   margin-top: -80px;
+    top: 11vh;
+  }
+
+
+    .style-04 {
+      position: relative;
+      content: "";
+
+      /* background-color:white; */
+      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+      -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      margin-top: 100px;
+      /* bottom: 10px; */
+      left: 0;
+      right: 0;
+      height: 500px;
+      -moz-border-radius: 100px / 10px;
+
+      border-style: outset;
+
+
+
+      /* border-top: 10px solid #f80303; */
+
+
+  }
+  .coins{
+    margin: 0px 140px 0px;
+
+  }
+  .conistfont{
+  margin-left: -25px;
+  }
+  .maesage{
+    height: 200px;
+    color: white;
+  }
+  .card1{
+    font-size:18px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin:20px 10px 0 ;
+    width: 240px;
+    height: 40px;
+    text-align: center;
+  }
+  .card1 p {
+  margin-top: 5px;
+  }
+  .hand{
+    margin: 0px 50px 20px;
+  }
+  .circle{
+    width:120px ;
+    height:120px ;
+    margin-left: 65px;
+    font-size: 50px
+  }
+  circle-progress{
+    font-size: 40px
+  }
+  .score{
+    margin-left: 60px;
+    margin-top: -15px;
+  }
+  .scorepart{
+    margin-left: 10px;
+    margin: 0px 0px 10px;
+  }
+  .coinsa{
+  margin-top: 20px;
+  margin-left: 10px;
+  }
+  .scoren{
+    margin-top: 20px;
+   margin-left: 20px;
+  }
+  .like{
+    margin-top: 10px;
+    margin-left: -30px;
+  }
+  .event{
+    left: 45px;
+    width: 650px;
+  }
+
+
+  }
+
+  @media only screen and (min-width:1440px)and (min-height:900px) and (max-width:1919px){
+
+    .style-04{
+      top: 80px;
+    }
+    .event{
+      width: 740px;
+    }
+    body{
+       top: 20px;
+    }
+    .body{
+      margin-top: 16vh;
+    }
+
+  }
+
+  @media only screen and (min-width: 1440px) and (max-width:1919px){
+
+
+body{
+  background-image: url(../../../../assets/ta.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+  /* background-position: inherit;
+
+  width: 100%; */
+  height: 100vh;
+  margin-top: -16vh;
+
+}
+.body{
+  background-image: url(../../../../assets/backgroun1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+  background-position: inherit;
+  height: 100%;
+  width: 100%;
+  margin-left: 0px;
+ /* margin-top: 0px; */
+
+}
+
+
+      .style-04 {
+        position: relative;
+        content: "";
+
+        /* background-color:white; */
+        -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+        -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        margin-top: 120px;
+        /* bottom: 10px; */
+        left: 0;
+        right: 0;
+        height: 500px;
+        -moz-border-radius: 100px / 10px;
+        top:16vh;
+        border-style: outset;
+
+
+
+        /* border-top: 10px solid #f80303; */
+
+
+    }
+    .coins{
+      margin: 0px 190px 0px;
+    }
+    .conistfont{
+    margin-left: -25px;
+    }
+    .maesage{
+      height: 200px;
+      color: white;
+    }
+    .fi{
+      margin-left: -10px;
+    }
+    .card1{
+      margin:20px 10px 0 ;
+      width: 240px;
+      height: 40px;
+      text-align: center;
+      font-size:20px;
+      /* margin-top: 2px; */
+      cursor: pointer;
+    }
+    .event{
+      left: 55px;
+      width: 81%;
+    }
+    .hand{
+      margin: 0px 50px 20px;
+    }
+    .circle{
+      width:120px ;
+      height:120px ;
+      margin-left: 145px;
+      font-size: 50px
+    }
+    circle-progress{
+      font-size: 40px
+    }
+    .score{
+      margin-left: 130px;
+      margin-top: -15px;
+    }
+    .scorepart{
+      margin-left: 10px;
+      margin: 0px 0px 10px;
+    }
+    .coinsa{
+    margin-top: 20px;
+    margin-left: 10px;
+    }
+    .scoren{
+      margin-top: 20px;
+     margin-left: 20px;
+    }
+    .like{
+      margin-top: 10px;
+      margin-left: -30px;
+    }
+
+  }
+
+
+  @media only screen and (min-width: 1920px) and (max-width:3839px) {
+
+    .home{
+      position: absolute;
+      margin-left: 46%;
+    /* top: 93.4%; */
+
+      width:120px
+      }
+    body{
+      background-image: url(../../../../assets/ta.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      /* background-attachment: fixed; */
+      /* background-position: inherit;
+
+      width: 100%; */
+      height: 100vh;
+      margin-top: -11.2vh
+
+    }
+    .body{
+      background-image: url(../../../../assets/backgroun1.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      /* background-attachment: fixed; */
+      background-position: inherit;
+      height: 100%;
+      width: 100%;
+      margin-left: 0px;
+     /* margin-top: 0px; */
+
+    }
+
+
+          .style-04 {
+            position: relative;
+            content: "";
+
+            /* background-color:white; */
+            -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+            -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            margin-top: 120px;
+            /* bottom: 10px; */
+            left: 0;
+            right: 0;
+            height: 600px;
+            -moz-border-radius: 100px / 10px;
+            top:21vh;
+            border-style: outset;
+
+
+
+            /* border-top: 10px solid #f80303; */
+
+
+        }
+        .coins{
+          margin: 0px 190px 0px;
+        }
+        .conistfont{
+        margin-left: -25px;
+        }
+        .maesage{
+          height: 200px;
+          color: white;
+          top: 50px;
+        }
+        .fi{
+          margin-left: -10px;
+        }
+        .card1{
+          margin:20px 10px 0 ;
+          width: 240px;
+          height: 40px;
+          text-align: center;
+          font-size:20px;
+          /* margin-top: 2px; */
+          cursor: pointer;
+        }
+        .event{
+          left: 75px;
+          width: 81%;
+          top: 60px;
+        }
+        .hand{
+          margin: 0px 75px 20px;
+        }
+        .circle{
+          width:120px ;
+          height:120px ;
+          margin-left: 19vh;
+          font-size: 50px
+        }
+        circle-progress{
+          font-size: 40px
+        }
+        .score{
+          margin-left: 130px;
+          margin-top: -15px;
+        }
+        .scorepart{
+          margin-left: 10px;
+          margin: 0px 50px 10px;
+        }
+        .coinsa{
+        margin-top: 20px;
+        margin-left: 10px;
+        }
+        .scoren{
+          margin-top: 20px;
+         margin-left: 20px;
+        }
+        .like{
+          margin-top: 10px;
+          margin-left: -30px;
+        }
+
+      }
+
+
+  @media only screen and (min-width: 3840px) {
+    .home{
+      position: absolute;
+      margin-left: 48.5%;
+      top: 69.4%;
+      width: 170px;
+
+      }
+
+    body{
+      background-image: url(../../../../assets/ta.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      /* background-attachment: fixed; */
+      /* background-position: inherit;
+
+      width: 100%; */
+      height: 100vh;
+      margin-top: -0.5vh;
+
+    }
+    .body{
+      background-image: url(../../../../assets/backgroun1.png);
+
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: inherit;
+      height: 50%;
+      width: 50%;
+      margin-left: 45vh;
+      /* margin-top: 50vh; */
+      top: 25vh;
+      position: relative;
+     /* margin-top: 0px; */
+
+    }
+
+
+          .style-04 {
+            position: relative;
+            content: "";
+
+            /* background-color:white; */
+            -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+            -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            margin-top: 10px;
+            /* bottom: 10px; */
+            left: 0;
+            right: 0;
+            height: 600px;
+            -moz-border-radius: 100px / 10px;
+            top:11vh;
+            border-style: outset;
+
+
+
+            /* border-top: 10px solid #f80303; */
+
+
+        }
+        .coins{
+          margin: 0px 190px 0px;
+        }
+        .conistfont{
+        margin-left: -25px;
+        }
+        .maesage{
+          height: 200px;
+          color: white;
+          top: 50px;
+        }
+        .fi{
+          margin-left: -10px;
+        }
+        .card1{
+          margin:20px 10px 0 ;
+          width: 240px;
+          height: 40px;
+          text-align: center;
+          font-size:20px;
+          /* margin-top: 2px; */
+          cursor: pointer;
+        }
+        .event{
+          left: 75px;
+          width: 81%;
+          top: 60px;
+        }
+        .hand{
+          margin: 0px 75px 20px;
+        }
+        .circle{
+          width:120px ;
+          height:120px ;
+          margin-left: 9vh;
+          font-size: 50px
+        }
+        circle-progress{
+          font-size: 40px
+        }
+        .score{
+          margin-left: 130px;
+          margin-top: -15px;
+        }
+        .scorepart{
+          margin-left: 10px;
+          margin: 0px 50px 10px;
+        }
+        .coinsa{
+        margin-top: 20px;
+        margin-left: 10px;
+        }
+        .scoren{
+          margin-top: 20px;
+         margin-left: 20px;
+        }
+        .like{
+          margin-top: 10px;
+          margin-left: -30px;
+        }
+
+      }
+
+
+
+
+
+
+
+

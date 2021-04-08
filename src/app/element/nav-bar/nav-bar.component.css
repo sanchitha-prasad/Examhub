@@ -1,0 +1,358 @@
+nav {
+
+  /* top: 88px ; */
+  left: 8px;
+  border-radius: 2%;
+  position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: white;
+  /* width: 1289px; */
+  z-index: 10;
+
+
+}
+.logoimg{
+  position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border:1px solid rgb(33, 236, 6);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.logo a:hover {
+  text-decoration: none;
+}
+.menu li {
+  font-size: 10px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+.logo a,
+.toggle a {
+  font-size: 20px;
+}
+.button.secondary {
+
+  border-bottom: 1px #444 solid;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.item.button {
+  order: 2;
+
+
+}
+.button:not(.secondary) a:hover {
+  background: #93ec02;
+  border-color: #fd0707;
+}
+.button.secondary a:hover {
+  color:white;
+  background: #93ec02;
+  border-color: #fd0707;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+.button a {
+  padding: 7.5px 15px;
+  background: rgb(4, 29, 255);
+  /* border: 1px #fcf8f8 solid; */
+  transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius:50em;
+
+}
+.button.secondary a {
+  background: transparent;
+  background-color: red;
+}
+
+/* Navbar Toggle */
+.toggle {
+  cursor:pointer;
+}
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+.bars:before,
+.bars:after {
+  background: #999;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.bars:before {
+  top: 5px;
+}
+.bars:after {
+  top: -5px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 468px) {
+
+  .menu {
+      justify-content: center;
+  }
+
+  .logo {
+      flex: 1;
+  }
+
+  .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+      order: 2;
+  }
+  .button.secondary {
+      border: 0;
+
+  }
+  .button a {
+      padding: 7.5px 15px;
+      background: rgb(4, 29, 255);
+      /* border: 1px #fcf8f8 solid; */
+      transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      border-radius:50em;
+  }
+  .button.secondary a {
+      background: transparent;
+      background-color: red;
+  }
+  .button a:hover {
+      text-decoration: none;
+      transition:all .25s;
+  }
+  .button:not(.secondary) a:hover {
+      background: #93ec02;
+      border-color: #fd0707;
+  }
+  .button.secondary a:hover {
+      color:white;
+      background: #93ec02;
+      border-color: #fd0707;
+  }
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+  nav {
+
+    top: 75px ;
+    left: 8px;
+    border-radius: 2%;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    width:100%;
+
+  }
+  .item {
+      display: block;
+      width: auto;
+  }
+  .toggle {
+      display: none;
+  }
+  .logo {
+      order: 0;
+  }
+  .item {
+      order: 1;
+
+  }
+  .button {
+      order: 2;
+
+  }
+  .menu li {
+      padding: 15px 10px;
+
+  }
+  .menu li.button {
+      padding-right: 0;
+      color: red;
+
+  }
+  .toglewview{
+      color: red;
+  }
+
+}
+@media (max-width: 1200px) {
+
+  nav {
+
+    /* top: 53px ; */
+
+    left: 5px;
+    border-radius: 2%;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgb(252, 250, 250);
+    width: 100%;
+
+
+  }
+  .logoimg{
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border:1px solid rgb(33, 236, 6);
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .item.button {
+    order: 2;
+
+
+  }
+  .button:not(.secondary) a:hover {
+    background: #93ec02;
+    border-color: #fd0707;
+  }
+  .button.secondary a:hover {
+    color:white;
+    background: #93ec02;
+    border-color: #fd0707;
+  }
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  .item.active {
+    display: block;
+  }
+  .button a {
+    padding: 7.5px 15px;
+    background: rgb(4, 29, 255);
+    /* border: 1px #fcf8f8 solid; */
+    transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius:50em;
+
+  }
+  .button.secondary a {
+    background: transparent;
+    background-color: red;
+  }
+
+  /* Navbar Toggle */
+  .toggle {
+    cursor:pointer;
+  }
+  .bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .bars:before,
+  .bars:after {
+    background: #999;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .bars:before {
+    top: 5px;
+  }
+  .bars:after {
+    top: -5px;
+  }
+
+}
+@media(min-width:1920px){
+  nav{
+    top: 120px;
+    left: 10px;
+    height: 6vh;
+    /* padding-top: 5px; */
+  }
+}
+@media(min-width:3840px){
+  nav{
+    top: 120px;
+    left: 10px;
+    height: 5vh;
+    padding-top: 20px;
+  }
+  .button a{
+    font-size: 20px;
+  }
+}
+  @media(min-width:1280px) and (min-width:950px) and (max-width:1440px) {
+    nav{
+      top: 100px;
+      left: 5px;
+      height: 5vh;
+      /* padding-top: 20px; */
+    }
+    .button a{
+      /* font-size: 20px; */
+    }
+  }
+    @media(min-width:1280px) and (min-width:700px) and (max-width:1440px){
+      nav{
+        top: 82px;
+        left: 5px;
+        height: 8vh;
+        padding-top: 5px;
+      }
+      .button a{
+        /* font-size: 20px; */
+      }
+}

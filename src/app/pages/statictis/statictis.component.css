@@ -1,0 +1,233 @@
+.home{
+  position: absolute;
+  margin-left: 45%;
+  top: 88.4%;
+  width:120px
+  }
+@media only screen and (min-width: 1280px) {
+    body{
+      background-image: url(../../../assets/ta.jpg);
+      height:100vh;
+      /* margin-top: -7px; */
+
+    }
+    .body{
+      background-image: url(../../../assets/backgroun1.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      /* background-attachment: fixed; */
+      /* background-position: inherit; */
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      margin-left: -15px;
+     /* margin-top: 80px; */
+
+    }
+
+
+      .style-04 {
+        position: relative;
+        content: "";
+
+        /* background-color:white; */
+        -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+        -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        margin-top: 100px;
+        /* bottom: 10px; */
+        left: 0;
+        right: 0;
+        height: 500px;
+        -moz-border-radius: 100px / 10px;
+
+        border-style: outset;
+
+
+
+        /* border-top: 10px solid #f80303; */
+
+
+    }
+    .coins{
+      margin: 0px 140px 0px;
+
+    }
+    .conistfont{
+    margin-left: -25px;
+    }
+    .maesage{
+      height: 200px;
+      color: white;
+    }
+    .card1{
+      margin:20px 10px 0 ;
+      width: 240px;
+      text-align: center;
+    }
+    .hand{
+      margin: 0px 50px 20px;
+    }
+    .circle{
+      width:120px ;
+      height:120px ;
+      margin-left: 65px;
+      font-size: 50px
+    }
+    circle-progress{
+      font-size: 40px
+    }
+    .score{
+      margin-left: 60px;
+      margin-top: -15px;
+    }
+    .scorepart{
+      margin-left: 10px;
+      margin: 0px 0px 10px;
+    }
+    .coinsa{
+    margin-top: 20px;
+    margin-left: 10px;
+    }
+    .scoren{
+      margin-top: 20px;
+     margin-left: 20px;
+    }
+    .like{
+      margin-top: 10px;
+      margin-left: -30px;
+    }
+
+
+    }
+
+    @media only screen and (min-width: 1440px) {
+
+
+  body{
+    background-image: url(../../../assets/ta.jpg);
+    height: 100vh;
+  }
+  .body{
+    background-image: url(../../../assets/backgroun1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    background-position: inherit;
+    height: 100%;
+    width: 100%;
+    margin-left: 0px;
+   margin-top: 0px;
+
+  }
+
+
+        .style-04 {
+          position: relative;
+          content: "";
+
+          /* background-color:white; */
+          -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+          -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+          margin-top: 100px;
+          /* bottom: 10px; */
+          left: 0;
+          right: 0;
+          height: 500px;
+          -moz-border-radius: 100px / 10px;
+
+          border-style: outset;
+
+
+
+          /* border-top: 10px solid #f80303; */
+
+
+      }
+      .coins{
+        margin: 0px 190px 0px;
+      }
+      .conistfont{
+      margin-left: -25px;
+      }
+      .maesage{
+        height: 200px;
+        color: white;
+      }
+      .fi{
+        margin-left: -10px;
+      }
+      .card1{
+        margin:20px 10px 0 ;
+        width: 240px;
+        text-align: center;
+      }
+      .event{
+        left: 55px;
+        width: 800px;
+      }
+      .hand{
+        margin: 0px 50px 20px;
+      }
+      .circle{
+        width:120px ;
+        height:120px ;
+        margin-left: 145px;
+        font-size: 50px
+      }
+      circle-progress{
+        font-size: 40px
+      }
+      .score{
+        margin-left: 130px;
+        margin-top: -15px;
+      }
+      .scorepart{
+        margin-left: 10px;
+        margin: 0px 0px 10px;
+      }
+      .coinsa{
+      margin-top: 20px;
+      margin-left: 10px;
+      }
+      .scoren{
+        margin-top: 20px;
+       margin-left: 20px;
+      }
+      .like{
+        margin-top: 10px;
+        margin-left: -30px;
+      }
+
+    }
+
+
+    .transparent{
+
+      background-color: rgba(39, 39, 39, 0.8);
+      border-radius: 2%;
+
+    }
+    .profileimg{
+      margin-left: 0px;
+      margin-top: 0px;
+      border-radius: 50%;
+      overflow: hidden;
+      height: 110px;
+      width: 110px;
+  }
+  @media (min-width:3840px){
+    .body{
+      width: 50%;
+      height: 50%;
+      left: 43vh;
+    top: 25vh;
+    }
+    .home{
+      position: absolute;
+      margin-left: 46.5%;
+      top: 69%;
+      width: 180px;
+      }
+  }

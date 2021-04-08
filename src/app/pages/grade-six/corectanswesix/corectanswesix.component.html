@@ -1,0 +1,69 @@
+<br>
+
+<body>
+  <div class="body ">
+ <img src="../../../../assets/rest.png" alt="" width="40px"
+      style="position: absolute;left: 15%;top: 15%;cursor: pointer;" (click)="back()">
+    <div class="float-left cardview ">
+
+      <div class=" level overflow-auto" (click)="previous()">
+
+        <i class="fa fa-arrow-circle-left" style="font-size: 80px;color: white;"></i>
+
+      </div>
+    </div>
+  </div>
+  <div class="container  style-04 col-sm-6">
+
+    <div class="d-flex justify-content-center offset-md-3 col-md-8 style-03" style="margin-top: 10px;height: 180px;">
+      <div class="rectangle">
+        <h6 style="text-align: center;color: white;">{{count+1}}</h6>
+      </div>
+      <div class="container overflow-auto" style="margin-top: 10px;" ng-repeat="loq of loq">
+        <img src="{{loq.image}}" alt="" class="" width="400px">
+        {{loq.question}}
+      </div>
+
+    </div>
+
+
+    <br>
+    <div class="select overflow-auto">
+
+      <div class="col-md-8 float-middle card card2 a" id="a">
+        <p>
+          <b>A</b>.
+          {{loq.optiona}}
+        </p>
+      </div>
+
+      <div class="col-md-8 float-middle card card2 b" id="b">
+        <p>
+          <b>B</b>.
+          {{loq.optionb}}
+        </p>
+      </div>
+
+      <div class="col-md-8 float-middle card card2 c" id="c">
+        <p>
+          <b>C</b>
+          .
+          {{loq.optionc}}
+        </p>
+      </div>
+      <div class="col-md-8 float-middle card card2 d" id="d">
+        <p>
+          <b>D</b>.
+          {{loq.optiond}}
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="col-md-2 float-right nextbutton" (click)="next()">
+    <i class="fa fa-arrow-circle-right" style="font-size: 80px;color: white;"></i>
+  </div>
+
+</body>

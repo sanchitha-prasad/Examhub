@@ -1,0 +1,143 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<br>
+
+<body>
+
+  <div id="download" style="background-size: 100% 100%; height: 640px;margin-top: -7%;">
+
+    <div style="width: 200px;height: auto;" class="m-5">
+      <br>
+      <img src="../../../assets/white.png" alt="" class="img-fluid" style="max-width: none;">
+
+    </div>
+    <p style="margin-top: 0%;position: absolute;margin-left: 9%;font-size: 18px;width: 300px;text-align: center;">
+      Hello User, please download our app or use computer to enjoy our game....!!
+    </p>
+
+    <p style="margin-top: 25%;position: absolute;margin-left: 9%;font-size: 18px;width: 300px;text-align: center;">
+    <b> Download Android </b>
+    </p>
+    <a href="https://play.google.com/store/apps/details?id=com.fonixss.examhublk"> <img
+        src="../../../assets/google-play-store-8-1-73-apk.png"
+        style="margin-top: 30%;position: absolute;margin-left: 35%;cursor: pointer;" width="100px"></a>
+
+        <p style="margin-top: 50%;position: absolute;margin-left: 9%;font-size: 18px;width: 300px;text-align: center;">
+          <b> Download Ios </b>
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.fonixss.examhublk"> <img
+              src="../../../assets/apple.png"
+              style="margin-top: 60%;position: absolute;margin-left: 35%;cursor: pointer;" width="100px"></a>
+  </div>
+  <div class="body mx-auto " id='body'>
+    <div>
+      <ng-container *ngComponentOutlet="loadComponents"></ng-container>
+    </div>
+    <div id="nav">
+      <nav class="col-md-10 offset-md-1 nav">
+        <ul class="menu offset-md-6">
+          <a href="https://www.examhub.lk/" target="blank"> <img src="../../../assets//white.png" alt=""
+              class="img-fluid " width="10%" height="10%" style="left: 2%;
+           position: absolute;
+           top: 20px;"></a>
+
+          <li class="item float-right "><a style="text-decoration: none;color: red;font-size: 20px;"><img
+                class="rounded-circle z-depth-2 " style="margin-top: 0px;" alt="" src="rounded-crircle" [src]="urllink"
+                data-holder-rendered="true" width="50px" height="50px"></a></li>
+          <li class="item button secondary "><a style="text-decoration: none;color: white;cursor: pointer;"
+              (click)="profile()">{{user}}</a> </li>
+          <li class="item button  notification float-right"><a
+              style="text-decoration: none;color: white;cursor: pointer;" (click)="toggleNotifi()"><i
+                class="fa fa-bell"></i><span class="badge" id="badge">{{notify}}</span> </a>
+            <div class="notifi-box overflow-auto" id="box" style="z-index: 80;">
+              <h2>Notifications <span>{{notify}}</span></h2>
+              <div class="notifi-item " *ngFor="let n of notifi">
+                <div class="text col-md-6">
+                  <h4 style="color: blue;">{{n.title}}</h4>
+                  <p style="color: rgb(3, 3, 3);"> <b>{{n.message}}</b></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item log  "><a style="text-decoration: none;color: white;cursor: pointer;" (click)="logout()"><img
+                src="../../../assets/logou.png" width="30px" alt=""></a> </li>
+
+          <li class="toggle"><span class="bars"></span></li>
+        </ul>
+
+      </nav>
+    </div>
+
+
+    <br>
+    <div class="d-flex justify-content-center col-md-9 hed">
+
+
+
+      <div class="card col-md-3 marg" (click)="grade6()">
+        <div class="imgdiv">
+          <img src="../../../assets/610.png" alt="" class=" imggr" srcset="" style="margin-top:30px">
+        </div>
+
+
+      </div>
+
+      <div class="card  col-md-3 marg" (click)="olevel()">
+        <div class="imgdiv">
+          <img src="../../../assets/o.l.png" alt="" class=" imggr" srcset="" style="margin-top:30px">
+        </div>
+
+
+      </div>
+
+      <div class="card  col-md-3 marg" (click)="Alevel()">
+        <div class="imgdiv">
+          <img src="../../../assets/al.png" alt="" class=" imggr" srcset="" style="margin-top:30px">
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="float-right mobile">
+      <img src="../../../assets/mobile.png" alt="" srcset="" class="img-fluid">
+    </div>
+
+    <div class="container d-flex mr-md-3 col-md-8 transparent slide">
+
+      <div class="container slide2">
+
+
+        <div class="glider-contain multiple">
+
+          <i class="fa fa-chevron-circle-left glider-prev prevhome" style="color: white;"></i>
+
+          <div class="glider glidermain">
+            <figure class="">
+
+              <img src="../../../assets/cover.png" alt="" class="imgslide img-fluid">
+
+            </figure>
+            <figure>
+              <a href="https://play.google.com/store/apps/details?id=com.fonixss.examhublk" target="blank">
+                <img src="../../../assets/slider1.png" alt="" class="imgslide img-fluid">
+              </a>
+            </figure>
+            <figure>
+
+              <img src="../../../assets/slider.png" alt="" class="imgslide img-fluid">
+
+            </figure>
+
+
+          </div>
+
+          <i class="fa fa-chevron-circle-right glider-next nexthome" style="color: white;"></i>
+
+          <div id=dots class="glider-dots"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>

@@ -1,0 +1,182 @@
+<br>
+<body>
+  <div class="body ">
+    <div class="loader loade" id="loading">
+      Loading
+      <span></span>
+    </div>
+    <nav class="col-md-10 offset-md-1 nav" id="nav">
+      <ul class="menu ">
+        <li class="logo"><a href="#"></a></li>
+
+        <li class="item float-right "><a style="text-decoration: none;color: red;font-size: 20px;"><img
+              class="rounded-circle z-depth-2 " style="margin-top: -10px;" alt="" src="rounded-crircle" [src]="urllink"
+              data-holder-rendered="true" width="50px" height="50px"></a></li>
+        <li class="item  secondary "><a style="text-decoration: none;color: white;cursor: pointer;">{{user}}</a></li>
+
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+    <div class="float-left cardview col-md-3">
+
+      <div class="card level overflow-auto">
+        <br>
+        <div *ngFor="let l of arr; ">
+
+          <p class="button green" *ngIf="l <lev" id="level" disabled style="background-color: green;"><span><i
+                class="fa fa-unlock"></i></span>
+            level {{l}}</p>
+          <p class="button green" *ngIf="l === lev" style="background-color: red;" id="level" disabled><span><i
+                class="fa fa-unlock"></i></span>
+            level {{l}}</p>
+          <p class="button green" *ngIf="l > lev" id="level" disabled><span><i class="fa fa-lock"></i></span>
+
+            level {{l}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container offset-md-4 style-04 col-sm-6">
+    <div class="levl">
+      <b>level {{lev}}</b>
+    </div>
+    <div class="row d-flex  justify-content-center bar" style="background-color: white;">
+      <div class="coins"><img src="../../../assets/coins.png" class="img-fluid" alt="">&nbsp;<b
+          class="conistfont">{{getcoin}}</b> </div>
+      <div class="coins ">
+        <div class="circle">
+
+          <circle-progress [percent]="time" [radius]="100" [outerStrokeWidth]="20" [innerStrokeWidth]="10" [space]="10"
+            [backgroundStrokeWidth]="110" [outerStrokeColor]="'#4882c2'" [innerStrokeColor]="'#e7e8ea'"
+            [titleFontSize]="24" [unitsFontSize]="0" [showSubtitle]="false" [animation]="false"
+            [animationDuration]="20000" [startFromZero]="120" [responsive]="true" [showTitle]="true"
+            [titleFontSize]="60">
+          </circle-progress>
+
+
+        </div>
+      </div>
+      <div class="coins"><img src="../../../assets/score.png" class="img-fluid" alt=""> <b>{{correctanswer}}</b> </div>
+    </div>
+
+    <div class="d-flex justify-content-center offset-md-3 col-md-8 style-03" style="margin-top: 10px;height: 180px;">
+      <div class="rectangle">
+        <h6 style="text-align: center;color: white;">{{count+1}}</h6>
+      </div>
+      <div class="container overflow-auto" style="margin-top: 10px;">
+        <img src="{{img}}" alt="" class="" width="400px">
+        <p style="font-size: 15px;">{{quis}}</p>
+      </div>
+
+    </div>
+
+
+    <div class="float-left left">
+      <p class="grenbar" style="color: rgb(123, 255, 0);"> {{number}}</p>
+      <div class="progress progress-bar-vertical " style="border:2px solid chartreuse;">
+
+        <div class="progress-bar progress-bar-success progress-bar-striped active " id="green" role="progressbar"
+          aria-valuenow="10" aria-valuemin="10" aria-valuemax="10"
+          style="height: 0%;background-color: rgb(123, 255, 0);">
+          <span class="sr-only">60% Complete</span>
+
+        </div>
+      </div>
+    </div>
+    <div class="float-right right">
+      <p class="grenbar" style="color: rgb(255, 0, 0);"> {{number1}}</p>
+      <div class="progress progress-bar-vertical " style="border:1px solid rgb(255, 0, 0);">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" id="red" role="progressbar"
+          aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 0%;background-color: red;">
+          <span class="sr-only">60% Complete</span>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <div class="select overflow-auto">
+
+      <button class="col-md-9 float-middle card card2 a row" id="a" (click)="correctAnser('a')">
+        <p style="text-align: left;"> <b>A</b>. {{optiona}}</p>
+        <div class="circle1" id="A">
+          <circle-progress [percent]="prec" [radius]="100" [outerStrokeWidth]="20" [innerStrokeWidth]="10"
+            [backgroundStrokeWidth]="30" [outerStrokeColor]="'red'" [innerStrokeColor]="'#e7e8ea'" [titleFontSize]="24"
+            [unitsFontSize]="24" [showSubtitle]="false" [animation]="false" [animationDuration]="20000"
+            [startFromZero]="false" [responsive]="true" [showTitle]="true" [titleFontSize]="60">
+          </circle-progress>
+        </div>
+
+      </button>
+
+      <button class="col-md-9 float-middle card card2 b" id="b" (click)="correctAnser('b')">
+        <p style="text-align: left;"> <b>B</b>. {{optionb}}</p>
+        <div class="circle1" id="B">
+          <circle-progress [percent]="prec1" [radius]="100" [outerStrokeWidth]="20" [innerStrokeWidth]="10"
+            [backgroundStrokeWidth]="30" [outerStrokeColor]="'red'" [innerStrokeColor]="'#e7e8ea'" [titleFontSize]="24"
+            [unitsFontSize]="24" [showSubtitle]="false" [animation]="false" [animationDuration]="20000"
+            [startFromZero]="false" [responsive]="true" [showTitle]="true" [titleFontSize]="60">
+          </circle-progress>
+        </div>
+
+
+      </button>
+
+      <button class="col-md-9 float-middle card card2 c" id="c" (click)="correctAnser('c')">
+        <p style="text-align: left;"> <b>C</b> . {{optionc}}</p>
+        <div class="circle1" id="C">
+          <circle-progress [percent]="prec2" [radius]="100" [outerStrokeWidth]="20" [innerStrokeWidth]="10"
+            [backgroundStrokeWidth]="30" [outerStrokeColor]="'red'" [innerStrokeColor]="'#e7e8ea'" [titleFontSize]="24"
+            [unitsFontSize]="24" [showSubtitle]="false" [animation]="false" [animationDuration]="20000"
+            [startFromZero]="false" [responsive]="true" [showTitle]="true" [titleFontSize]="60">
+          </circle-progress>
+        </div>
+      </button>
+      <button class="col-md-9 float-middle card card2 d" id="d" (click)="correctAnser('d')">
+        <p style="text-align: left;"> <b>D</b>. {{optiond}}</p>
+        <div class="circle1" id="D">
+          <circle-progress [percent]="prec3" [radius]="100" [outerStrokeWidth]="20" [innerStrokeWidth]="10"
+            [backgroundStrokeWidth]="30" [outerStrokeColor]="'red'" [innerStrokeColor]="'#e7e8ea'" [titleFontSize]="24"
+            [unitsFontSize]="24" [showSubtitle]="false" [animation]="false" [animationDuration]="20000"
+            [startFromZero]="false" [responsive]="true" [showTitle]="true" [titleFontSize]="60">
+          </circle-progress>
+        </div>
+      </button>
+
+      <button class="col-md-9  card card2 float-middle e" id="e" (click)="correctAnser('e')">
+        <p style="text-align: left;"> <b>E</b> . {{optione}}</p>
+        <div class="circle1" id="E">
+          <circle-progress [percent]="prec4" [radius]="100" [outerStrokeWidth]="20" [innerStrokeWidth]="10"
+            [backgroundStrokeWidth]="30" [outerStrokeColor]="'red'" [innerStrokeColor]="'#e7e8ea'" [titleFontSize]="24"
+            [unitsFontSize]="24" [showSubtitle]="false" [animation]="false" [animationDuration]="20000"
+            [startFromZero]="false" [responsive]="true" [showTitle]="true" [titleFontSize]="60">
+          </circle-progress>
+        </div>
+      </button>
+
+
+    </div>
+
+
+  </div>
+  <div class="col-md-2 float-right option">
+    <div class="switch fifty" (click)="fifty(1)">
+      <p>50</p>
+    </div>
+
+
+    <div class="fifty" (click)="skip(1)">
+      <p> <i class="fa fa-step-forward sss"></i></p>
+    </div>
+    <div class="fifty">
+      <p> <i class="fa fa-users sss" (click)="friends(1)"></i></p>
+    </div>
+    <div class="fifty">
+      <p><i class="fa fa-history sss" (click)="timeinc(1)"></i></p>
+    </div>
+  </div>
+
+  <div class="home" width="200px" height="200px" style="cursor: pointer;" (click)="home()">
+    <p style="color: black;">s</p>
+  </div>
+</body>

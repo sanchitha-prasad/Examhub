@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div class="body">
+
+    <div class="col-md-4 transparent"
+      style="border: 2px solid red;margin-top: 15%;margin-bottom: 0%;position: absolute;margin-left: 10%;width: 30%;">
+      <div class="card2" style="margin-left: 35%;margin-top: 5%;">
+        <img class="rounded-circle z-depth-2 " alt="" src="rounded-crircle" data-holder-rendered="true" [src]="userPic"
+          width="100px" class="profileimg">
+        <p style="margin-left: -15%;"> <b style="color: red;font-weight: 1000;font-style: oblique;"> Hello </b> <b
+            style="color: blue;"> {{name}} </b></p>
+        <p style="margin-left: -15%;color: rgb(173, 255, 47);">Rank <b style="margin-left: 36%;color: white;">
+            {{myRank}}</b></p>
+        <hr class="" style="margin-left: -20%;width: 75%;background-color: blue;">
+        <p style="margin-left: -15%;color: greenyellow;">Coins <b style="margin-left: 35%;color: white;">{{coin}}</b>
+        </p>
+        <hr class="" style="margin-left: -20%;width: 75%;background-color: blue;">
+        <p style="margin-left: -15%;color: greenyellow;">Score <b style="margin-left: 35%;color: white;"> {{score}}</b>
+        </p>
+        <hr class="" style="margin-left: -20%;width: 75%;background-color: blue; margin-bottom: 8%;">
+      </div>
+    </div>
+
+    <div class="col-md-3 transparent"
+      style="border: 2px solid red;margin-top: 15%;position: absolute;margin-left: 41%;margin-bottom: 0%;">
+      <div class="row" style="margin-left: 10%;margin-bottom: -5%;margin-top: 10%;">
+        <div style="border: 4px solid rgb(0, 47, 255);height: 70px;"></div>
+        <div style="margin-left: 10%;color: white;font-size: 18px;margin-top: 2%;">
+          <b>{{question}}</b>
+          <p>Attended Ques</p>
+        </div>
+
+      </div>
+      <div class="row" style="margin-left: 10%;margin-bottom: 10%;margin-top: 10%;">
+        <div style="border: 4px solid chartreuse;height: 70px;"></div>
+        <div style="margin-left: 10%;color: white;font-size: 18px;margin-top: 2%;">
+          <b>{{corect}}</b>
+          <p>Correct Answer</p>
+        </div>
+      </div>
+      <div class="row" style="margin-left: 10%;margin-bottom: 10%;margin-top: 10%;">
+        <div style="border: 4px solid rgb(255, 0, 0);height: 70px;"></div>
+        <div style="margin-left: 10%;color: white;font-size: 18px;margin-top: 2%;">
+          <b>{{incorrect}}</b>
+          <p>Incorrect Answer</p>
+        </div>
+      </div>
+    </div>
+
+    <igx-doughnut-chart height="50%" width="20%" style="margin-left: 70%;margin-top: 12%;">
+      <igx-ring-series [dataSource]="data" labelMemberPath="Label" valueMemberPath="Value">
+
+      </igx-ring-series>
+    </igx-doughnut-chart>
+    <div class="d-flex justify-content-center" style="margin-left: 60%;margin-top: -2%;">
+      <div
+        style="border: 2px solid rgb(248, 246, 246);border-radius: 20%;width: 30px;height: 30px; margin-top: 10%;margin: 10px 10px 10px;background-color: yellowgreen;">
+      </div>
+      <p style="margin-top: 2%;color: white;"> {{corecct}}%</p>
+      <div
+        style="border: 2px solid rgb(241, 238, 238);border-radius: 20%;width: 30px;height: 30px; margin-top: 10%;margin: 10px 10px 10px;background-color: rgb(99, 12, 214);">
+      </div>
+      <p style="margin-top: 2%;color: white;"> {{anser}}%</p>
+
+
+    </div>
+  </div>
+
+  <!-- modal -->
+  <div class="home" width="200px" height="200px" style="cursor: pointer;" (click)="home()">
+    <p style="color: black;">s</p>
+  </div>
+
+</body>
+
+</html>

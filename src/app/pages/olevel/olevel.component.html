@@ -1,0 +1,120 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<br>
+
+<body>
+  <div class="body" usemap="#home">
+    <nav class="col-md-10 offset-md-1 nav" id="nav">
+      <ul class="menu ">
+        <li class="logo"><a href="#"></a></li>
+
+        <li class="item float-right "><a style="text-decoration: none;color: red;font-size: 20px;"><img
+              class="rounded-circle z-depth-2 " style="margin-top: -10px;" alt="" src="rounded-crircle" [src]="urllink"
+              data-holder-rendered="true" width="50px" height="50px"></a></li>
+        <li class="item button secondary "><a style="text-decoration: none;color: white;cursor: pointer;"
+            (click)="profile()">{{user}}</a></li>
+        <li class="item button "><a style="text-decoration: none;color: white;cursor: pointer;"
+            (click)="leadeboard()">Leader Board</a></li>
+        <li class="item button "><a style="text-decoration: none;color: white;cursor: pointer;font-size:10px;"
+            (click)="static()">Statistics</a></li>
+
+
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+
+
+    <div class="d-flex justify-content-center main">
+      <div class="card1 ">
+        <img src="../../../assets/2.png" alt="" class="img-fluid">
+      </div>
+    </div>
+    <br>
+    <div class="container  col-sm-8 slides">
+
+
+      <div class="glider-contain multiple">
+
+        <i class="fa fa-chevron-circle-left glider-prev preval" style="font-size: 30px;color: white;"></i>
+
+        <div class="glider gliderAlmain">
+
+          <figure class="fig1 col-md-12">
+
+            <div *ngFor="let item of subject" class="fig col-md-12" (click)="mainCategories(item)"
+              style="border: 5px solid #098b05;">
+              <div class="row">
+                <img src="{{item.image}}" alt="">
+                <h2 style="margin-top: 20px;font-size: 27px;margin-left: 40px;text-align: center;">
+                  {{item.category_name}}</h2>
+              </div>
+
+
+              <!-- -->
+
+
+            </div>
+          </figure>
+
+        </div>
+
+        <i class="fa fa-chevron-circle-right glider-next nextal" style="font-size: 30px;color: white;"></i>
+
+        <div id=dots class="glider-dots"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-3">
+    <div class="col-md-2 grade offset-5">
+      <h4 style="text-align: center;" class="">{{sub}}</h4>
+    </div>
+
+    <div class="container col-md-9 transparent slide ">
+
+      <div class="container slide2 slides">
+
+
+        <div class="glider-contain multiple">
+
+          <i class="fa fa-chevron-circle-left glider-prev pre" style="font-size: 30px;color: white;"></i>
+
+          <div class="glider gliderAL" style="width: 800px;margin-left: 10px;">
+            <figure class="fig2" style="justify-content: unset;
+                align-content: un;">
+              <div *ngFor="let s of subcategory" class="row col-md-12 sub" (click)="getquestion(s)">
+                <div class="col-sm">
+                  <img src="{{s.image}}" alt="" class="imgslide" height="60px" width="500px" style="border-radius: 5%;">
+                </div>
+                <div class="col-sm">
+                  <p> <b>{{s.subcategory_name}}</b></p>
+                </div>
+
+                <div>
+
+                </div>
+
+              </div>
+            </figure>
+
+          </div>
+
+          <i class="fa fa-chevron-circle-right glider-next  nex" style="font-size: 30px;color: white;"></i>
+
+          <div id=dots class="glider-dots"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="home" width="200px" height="200px" style="cursor: pointer;" (click)="home()">
+    <p style="color: black;">s</p>
+  </div>
+  <br>
+  <div class="fot"></div>
+
+  <map name="home">
+    <area shape="rect" coords="1449,1993,1641,2081" href="" alt="">
+  </map>
+</body>
